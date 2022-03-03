@@ -15,4 +15,32 @@
   width: 100%;
   height: 80vh;
 }
+
+#root .map .wrapper #states path {
+  fill: #585858;
+  stroke: #000000;
+  stroke-width: 1.5px;
+}
+
+#root .map .wrapper #states path:hover {
+  fill: #009300;
+}
+
+#root .map .wrapper #states .active {
+  fill: #00B700;
+}
+
+#root .map .wrapper #states .activeDetail {
+  fill: #00B700;
+}
+
+#root .map .wrapper #states path {
+  cursor: pointer;
+}
+
+#root .map .wrapper #states text {
+  cursor: pointer;
+  font-size: 12px;
+  fill: #fff;
+}
 /*# sourceMappingURL=index.css.map */
