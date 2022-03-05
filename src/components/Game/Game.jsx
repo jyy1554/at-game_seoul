@@ -146,6 +146,7 @@ function Game() {
       src: "assets/game/N서울타워.jpeg",
       answer: '용산구'
     },
+    // 홍대입구, 코엑스, 익선동, 광화문, 고려대, 
   ]
 
   /* useEffect에서 설정한 함수가 가장 처음 렌더링될때만 실행되고 이후 실행할 필요가 없는 경우엔,
