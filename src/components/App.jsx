@@ -5,7 +5,7 @@ import Game from './Game/Game';
 import Header from './Header/Header';
 import Result from './Result/Result';
 import Welcome from './Welcome/Welcome';
-import Map from './Map/Map';
+import MyMap from './MyMap/MyMap';
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Map />} />
+          <Route path="/" element={<MyMap />} />
           <Route path="/game" element={<Game />} />
           <Route path="/result" element={<Result />} />
         </Routes>
