@@ -1,0 +1,17 @@
+#root .map-wrapper {
+  width: 30rem;
+  height: 20rem;
+}
+
+#root .map-wrapper svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#root .map-wrapper svg .gu:hover {
+  stroke: white;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

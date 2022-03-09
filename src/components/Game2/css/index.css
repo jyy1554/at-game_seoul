@@ -1,0 +1,165 @@
+#root .game {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .game .wrapper {
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+}
+
+#root .game .wrapper .gu-img {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.4;
+}
+
+#root .game .wrapper .score-container {
+  position: absolute;
+  padding-top: 20px;
+  right: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+#root .game .wrapper .score-container .ur-score-is {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+#root .game .wrapper .score-container .score {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: white;
+  cursor: default;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#root .game .wrapper .score-container .score:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#root .game .wrapper .map-icon {
+  position: absolute;
+  padding-top: 15px;
+  left: 10px;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-animation: 1.5s infinite normal heartbeat;
+          animation: 1.5s infinite normal heartbeat;
+}
+
+#root .game .wrapper .map-icon:hover {
+  opacity: 0.8;
+}
+
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+}
+
+#root .game .wrapper .quiz-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0;
+  z-index: 2;
+}
+
+#root .game .wrapper .quiz-container .gu-name {
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  z-index: inherit;
+}
+
+#root .game .wrapper .quiz-container .hidden-hint {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: gray;
+  background-color: rgba(122, 122, 122, 0.1);
+  z-index: inherit;
+}
+
+#root .game .wrapper .quiz-container .input-and-result .answer-container {
+  width: 30rem;
+  height: 20rem;
+}
+
+@media (max-width: 480px) {
+  #root .game .wrapper .score-container .ur-score-is {
+    font-size: 1rem;
+  }
+  #root .game .wrapper .score-container .score {
+    font-size: 1.5rem;
+  }
+  #root .game .wrapper .quiz-container .gu-name {
+    font-size: 50px;
+  }
+  #root .game .wrapper .quiz-container .answer-container {
+    width: 16rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
