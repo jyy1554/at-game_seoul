@@ -1,3 +1,5 @@
+$gu-quiz-blue: #1976d2;
+
 #root {
   .map-wrapper {
     width: 25rem;
@@ -16,6 +18,11 @@
         stroke: white;
         stroke-width: 2px;
         cursor: pointer;
+      }
+
+      .labels {
+        //라벨에서도 .gu:hover가 동작하도록 labels에서 마우스 이벤트가 동작하지 않도록 함
+        pointer-events: none; 
       }
     }
   }

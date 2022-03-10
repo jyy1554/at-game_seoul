@@ -18,4 +18,8 @@
   stroke-width: 2px;
   cursor: pointer;
 }
+
+#root .map-wrapper .seoul-map .labels {
+  pointer-events: none;
+}
 /*# sourceMappingURL=index.css.map */
