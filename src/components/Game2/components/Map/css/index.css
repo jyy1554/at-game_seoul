@@ -1,17 +1,21 @@
 #root .map-wrapper {
-  width: 30rem;
+  width: 25rem;
   height: 20rem;
 }
 
-#root .map-wrapper svg {
+#root .map-wrapper .seoul-map {
   display: block;
   height: 100%;
   width: 100%;
+  opacity: 0.8;
+  fill: #a59a9a;
+  stroke: #dad8d8;
+  stroke-width: 0.5px;
 }
 
-#root .map-wrapper svg .gu:hover {
+#root .map-wrapper .seoul-map .gu:hover {
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 2px;
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

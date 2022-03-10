@@ -1,7 +1,7 @@
 $gu-quiz-blue: #1976d2;
 
 #root {
-  .game {
+  .game2 {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -80,11 +80,11 @@ $gu-quiz-blue: #1976d2;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 0;
+        margin-top: 40px;
         z-index: 2;
 
         .gu-name {
-          font-size: 65px;
+          font-size: 55px;
           font-weight: bold;
           color: white;
           margin-bottom: 10px;
@@ -101,9 +101,10 @@ $gu-quiz-blue: #1976d2;
         }
 
         .input-and-result {
-          .answer-container {
-            width: 30rem;
-            height: 20rem;
+          z-index: 3;
+
+          .map-container {
+            
           }
         }
       }

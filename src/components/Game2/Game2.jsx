@@ -6,11 +6,11 @@ import ShowScore from './containers/ShowScore';
 import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 import SentimentDissatisfiedOutlinedIcon from '@mui/icons-material/SentimentDissatisfiedOutlined';
 import { useDispatch, useSelector } from 'react-redux';
-import Map from './components/Map/Map';
 import data from './data/seoul.json';
+import Map from './components/Map/Map';
 
 
-function Game() {
+function Game2() {
   const navigate = useNavigate();
   const dispatch = useDispatch(); //점수를 Result 컴포넌트에 넘겨주기 위해
   const numOfProbs = 10;
@@ -204,7 +204,7 @@ function Game() {
 
 
   return (
-    <div className='game'>
+    <div className='game2'>
       <div className='wrapper'>
         <img className='gu-img' src={display.src} alt='사진' />
         <div className="score-container">
@@ -234,7 +234,7 @@ function Game() {
                 </div>
               )
             )):(
-              <div className="answer-container">
+              <div className="map-container">
                 <Map data={data} />
               </div>
             )}
@@ -245,4 +245,4 @@ function Game() {
   );
 }
 
-export default Game;
+export default Game2;

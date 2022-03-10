@@ -3,7 +3,7 @@ import { select, geoPath, geoMercator } from 'd3';
 import useResizeObserver from '../useResizeObserver';
 import './css/index.css';
 
-function Map({ data, property }) {
+function Map({ data }) {
   const svgRef = useRef();
   const wrapperRef = useRef();
   const dimensions = useResizeObserver(wrapperRef);
@@ -30,12 +30,12 @@ function Map({ data, property }) {
       .attr("class", "gu")
       .attr("d", feature => pathGenerator(feature));
     
-  }, [data, dimensions, property]);
+  }, [data, dimensions]);
 
 
   return (
     <div ref={wrapperRef} className="map-wrapper">
-        <svg ref={svgRef} className></svg>
+        <svg ref={svgRef} className="seoul-map"></svg>
     </div>
   )
 }

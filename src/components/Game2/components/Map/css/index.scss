@@ -1,20 +1,22 @@
 #root {
   .map-wrapper {
-    // visibility: hidden;
-    width: 30rem;
+    width: 25rem;
     height: 20rem;
     
-    svg {
+    .seoul-map {
       display: block;
       height: 100%;
       width: 100%;
+      opacity: 0.8;
+      fill: rgb(165, 154, 154);
+      stroke: rgb(218, 216, 216);
+      stroke-width: 0.5px;
 
       .gu:hover {
         stroke: white;
-        stroke-width: 1px;
+        stroke-width: 2px;
         cursor: pointer;
       }
     }
-    
   }
 }
