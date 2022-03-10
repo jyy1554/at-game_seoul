@@ -14,7 +14,7 @@ class App extends Component {
         <Header />
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/game" element={<Game />} />
+          <Route path="/game1" element={<Game />} />
           <Route path="/game2" element={<Game2 />} />
           <Route path="/result" element={<Result />} />
         </Routes>
