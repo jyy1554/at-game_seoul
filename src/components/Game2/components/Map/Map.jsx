@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { select, geoPath, geoMercator } from 'd3';
-import useResizeObserver from '../useResizeObserver';
+import useResizeObserver from './useResizeObserver';
 import './css/index.css';
 
 function Map({ data }) {

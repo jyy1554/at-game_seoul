@@ -54,59 +54,6 @@
           transform: scale(1.3);
 }
 
-#root .game2 .wrapper .map-icon {
-  position: absolute;
-  padding-top: 15px;
-  left: 10px;
-  z-index: 2;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  -webkit-animation: 1.5s infinite normal heartbeat;
-          animation: 1.5s infinite normal heartbeat;
-}
-
-#root .game2 .wrapper .map-icon:hover {
-  opacity: 0.8;
-}
-
-@-webkit-keyframes heartbeat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-  }
-}
-
-@keyframes heartbeat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-  }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-  }
-}
-
 #root .game2 .wrapper .quiz-container {
   height: 100%;
   display: -webkit-box;

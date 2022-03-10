@@ -1,5 +1,3 @@
-$gu-quiz-blue: #1976d2;
-
 #root {
   .map-wrapper {
     width: 25rem;
@@ -17,6 +15,7 @@ $gu-quiz-blue: #1976d2;
       .gu:hover {
         stroke: white;
         stroke-width: 2px;
+        fill: rgb(128, 122, 122);
         cursor: pointer;
       }
 

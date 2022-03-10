@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/index.css';
-import MouseOverPopover from './components/MouseOverPopover';
 import ShowScore from './containers/ShowScore';
 import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 import SentimentDissatisfiedOutlinedIcon from '@mui/icons-material/SentimentDissatisfiedOutlined';
@@ -210,9 +209,6 @@ function Game2() {
         <div className="score-container">
           <ShowScore />
         </div>
-        <span className="map-icon">
-          <MouseOverPopover />
-        </span>
         <div className='quiz-container'>
           <div className='gu-name'>{display.name}</div>
           {gus.length ? (
