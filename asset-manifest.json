@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/at-game_seoul/static/css/main.0a159197.css",
+    "main.js": "/at-game_seoul/static/js/main.cfee1ac5.js",
+    "index.html": "/at-game_seoul/index.html",
+    "main.0a159197.css.map": "/at-game_seoul/static/css/main.0a159197.css.map",
+    "main.cfee1ac5.js.map": "/at-game_seoul/static/js/main.cfee1ac5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a159197.css",
+    "static/js/main.cfee1ac5.js"
+  ]
+}
