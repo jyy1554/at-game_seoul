@@ -33,10 +33,14 @@
           margin-bottom: 16px;
         }
 
-        .sub-title {
-          margin-bottom: 20px;
-          font-weight: bold;
-          color: gray;
+        .subtitle-container {
+          display: flex;
+          column-gap: 7px;
+
+          .subtitle {
+            font-weight: bold;
+            color: gray;
+          }
         }
 
         .start-btn {
@@ -47,7 +51,7 @@
             padding: 0.9rem 1.5rem;
             border-radius: 5rem;
             border: 2px solid white;
-            margin: 0.5rem;
+            margin-top: 25px;
             background-color: transparent;
             color: white;
             cursor: pointer;
@@ -87,6 +91,11 @@
         .title-container {
           .main-title {
             font-size: 45px;
+          }
+
+          .subtitle-container {
+            flex-direction: column;
+            text-align: center;
           }
         }
       }

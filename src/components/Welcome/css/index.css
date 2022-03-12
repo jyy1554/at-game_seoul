@@ -51,8 +51,15 @@
   margin-bottom: 16px;
 }
 
-#root .welcome .wrapper .title-container .sub-title {
-  margin-bottom: 20px;
+#root .welcome .wrapper .title-container .subtitle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7px;
+          column-gap: 7px;
+}
+
+#root .welcome .wrapper .title-container .subtitle-container .subtitle {
   font-weight: bold;
   color: gray;
 }
@@ -64,7 +71,7 @@
   padding: 0.9rem 1.5rem;
   border-radius: 5rem;
   border: 2px solid white;
-  margin: 0.5rem;
+  margin-top: 25px;
   background-color: transparent;
   color: white;
   cursor: pointer;
@@ -120,6 +127,13 @@
 @media (max-width: 480px) {
   #root .welcome .wrapper .title-container .main-title {
     font-size: 45px;
+  }
+  #root .welcome .wrapper .title-container .subtitle-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
