@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/playatgame.com/static/css/main.15c8a2cc.css",
-    "main.js": "/playatgame.com/static/js/main.1e62fc38.js",
-    "index.html": "/playatgame.com/index.html",
-    "main.15c8a2cc.css.map": "/playatgame.com/static/css/main.15c8a2cc.css.map",
-    "main.1e62fc38.js.map": "/playatgame.com/static/js/main.1e62fc38.js.map"
+    "main.css": "/at-game_seoul/static/css/main.15c8a2cc.css",
+    "main.js": "/at-game_seoul/static/js/main.d02bfe13.js",
+    "index.html": "/at-game_seoul/index.html",
+    "main.15c8a2cc.css.map": "/at-game_seoul/static/css/main.15c8a2cc.css.map",
+    "main.d02bfe13.js.map": "/at-game_seoul/static/js/main.d02bfe13.js.map"
   },
   "entrypoints": [
     "static/css/main.15c8a2cc.css",
-    "static/js/main.1e62fc38.js"
+    "static/js/main.d02bfe13.js"
   ]
 }
