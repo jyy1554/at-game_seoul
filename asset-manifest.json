@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/at-game_seoul/static/css/main.15c8a2cc.css",
-    "main.js": "/at-game_seoul/static/js/main.d02bfe13.js",
-    "index.html": "/at-game_seoul/index.html",
-    "main.15c8a2cc.css.map": "/at-game_seoul/static/css/main.15c8a2cc.css.map",
-    "main.d02bfe13.js.map": "/at-game_seoul/static/js/main.d02bfe13.js.map"
+    "main.css": "/static/css/main.15c8a2cc.css",
+    "main.js": "/static/js/main.2b1df984.js",
+    "index.html": "/index.html",
+    "main.15c8a2cc.css.map": "/static/css/main.15c8a2cc.css.map",
+    "main.2b1df984.js.map": "/static/js/main.2b1df984.js.map"
   },
   "entrypoints": [
     "static/css/main.15c8a2cc.css",
-    "static/js/main.d02bfe13.js"
+    "static/js/main.2b1df984.js"
   ]
 }
