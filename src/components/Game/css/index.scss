@@ -47,6 +47,19 @@ $gu-quiz-blue: #1976d2;
 
       }
 
+      .map-icon {
+        position: absolute;
+        padding-top: 15px;
+        left: 15px;
+        color: white;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      .map-icon :hover {
+        opacity: 0.8;
+      }
+
       .quiz-container {
         height: 100%;
         display: flex;

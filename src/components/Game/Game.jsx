@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/index.css';
 import ShowScore from './components/ShowScore';
+import HomeIcon from '@mui/icons-material/Home';
 import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 import SentimentDissatisfiedOutlinedIcon from '@mui/icons-material/SentimentDissatisfiedOutlined';
 import { useDispatch, useSelector } from 'react-redux';
@@ -163,6 +164,13 @@ function Game() {
     });
   }, [])
 
+  const __goHome = useCallback(
+    () => {
+      navigate('/');
+    },
+    [navigate],
+  )
+
   const __goResult = useCallback(
     () => {
       navigate('/result');
@@ -210,6 +218,9 @@ function Game() {
         <div className="score-container">
           <ShowScore />
         </div>
+        <span className="map-icon" onClick={__goHome}>
+          <HomeIcon sx={{ fontSize: '2.5rem' }} />
+        </span>
         <div className='quiz-container'>
           {showResult ? (
             <div className='gu-name'>정답 : {display.answer}</div>

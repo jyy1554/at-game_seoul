@@ -54,6 +54,19 @@
           transform: scale(1.3);
 }
 
+#root .game .wrapper .map-icon {
+  position: absolute;
+  padding-top: 15px;
+  left: 15px;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#root .game .wrapper .map-icon :hover {
+  opacity: 0.8;
+}
+
 #root .game .wrapper .quiz-container {
   height: 100%;
   display: -webkit-box;
