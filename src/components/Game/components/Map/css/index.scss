@@ -26,3 +26,13 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  #root {
+    .map-wrapper {
+      width: 22rem;
+      height: 19rem;
+    }
+      
+  }
+}

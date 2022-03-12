@@ -40,8 +40,6 @@
         }
 
         .start-btn {
-          display: flex;
-
           .game-start {
             min-width: 10rem;
             font-size: 1.5rem;
@@ -75,8 +73,8 @@
               transform-origin: center center;
             }
           }
-  
         }
+
       }
     }
   }

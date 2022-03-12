@@ -57,12 +57,6 @@
   color: gray;
 }
 
-#root .welcome .wrapper .title-container .start-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #root .welcome .wrapper .title-container .start-btn .game-start {
   min-width: 10rem;
   font-size: 1.5rem;

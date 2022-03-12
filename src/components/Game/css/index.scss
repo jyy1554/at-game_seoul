@@ -47,45 +47,17 @@ $gu-quiz-blue: #1976d2;
 
       }
 
-      .map-icon {
-        position: absolute;
-        padding-top: 15px;
-        left: 10px;
-        z-index: 2;
-        transition: all 0.5s ease 0s;
-        animation: 1.5s infinite normal heartbeat;
-      }
-
-      .map-icon :hover {
-        opacity: 0.8;
-      }
-
-      @keyframes heartbeat {
-        0% {
-          transform: scale(1);
-          transform-origin: center center;
-        }
-        50% {
-          transform: scale(1.2);
-          background-color: greenyellow;
-        }
-        100% {
-          transform: scale(1);
-          transform-origin: center center;
-        }
-      }
-
       .quiz-container {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 40px;
         z-index: 2;
 
         .gu-name {
-          font-size: 65px;
+          font-size: 55px;
           font-weight: bold;
           color: white;
           margin-bottom: 10px;
@@ -102,54 +74,9 @@ $gu-quiz-blue: #1976d2;
         }
 
         .input-and-result {
-          z-index: 2;
-          height: 150px;
+          z-index: 3;
 
-          .answer-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 2rem;
-            width: 20rem;
-            background-color: rgba(250, 241, 241, 0.6);
-  
-            input {
-              width: 100%;
-              height: 100%;
-              border: none;
-              font-size: 1.1rem;
-              font-weight: bolder;
-              background-color: transparent;
-              padding: 0px 20px;
-            }
-  
-            input::placeholder {
-              color: rgb(94, 91, 91);
-            }
-  
-            input:focus {
-              outline: none;
-            }
-  
-            .submit-btn {
-              min-width: 6rem;
-              font-size: 1.1rem;
-              font-weight: bolder;
-              padding: 0.7rem 0.9rem;
-              border-radius: 2rem;
-              border: 2px solid $gu-quiz-blue;
-              background-color: $gu-quiz-blue;
-              opacity: 0.8;
-              color: white;
-              cursor: pointer;
-              transition: all 0.5s ease 0s;
-            }
-  
-            .submit-btn:hover {
-              color: gray;
-              border-color: white;
-              background-color: white;
-            }
+          .map-container {
           }
         }
       }
@@ -169,13 +96,19 @@ $gu-quiz-blue: #1976d2;
             font-size: 1.5rem;
           }
         }
+
         .quiz-container {
           .gu-name {
-            font-size: 50px;
+            font-size: 35px;
           }
 
           .answer-container {
             width: 16rem;
+          }
+
+          .input-and-result {
+            .map-container {
+            }
           }
         }
       }

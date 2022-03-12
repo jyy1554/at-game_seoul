@@ -1,24 +1,25 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/index.css';
-import MouseOverPopover from './components/MouseOverPopover';
 import ShowScore from './components/ShowScore';
 import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 import SentimentDissatisfiedOutlinedIcon from '@mui/icons-material/SentimentDissatisfiedOutlined';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import data from './data/seoul.json';
+import Map from './components/Map/Map';
 
 
 function Game() {
   const navigate = useNavigate();
   const dispatch = useDispatch(); //점수를 Result 컴포넌트에 넘겨주기 위해
+  const input = useSelector(state => state.input);
   const numOfProbs = 10;
 
-  const [text, setText] = useState('');
+  // const [text, setText] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [correctAnswer, setCorrectAnswer] = useState(true);
   const [display, setDisplay] = useState({}); //문제에서 보여지는 객체
   const [gus, setGus] = useState([]); // 그 다음 문제들의 배열
-  const inputRef = useRef();
 
   const items = [
     {
@@ -87,7 +88,7 @@ function Game() {
       answer: '마포구'
     },
     {
-      name: '서울대(가장 큰 캠퍼스)',
+      name: '서울대(관악캠퍼스)',
       src: "assets/game/서울대.jpeg",
       answer: '관악구'
     },
@@ -173,7 +174,9 @@ function Game() {
     (e) => {
       e.preventDefault(); //새로고침되지 않기 위해
 
-      if (text === display.answer) {
+      console.log(input);
+
+      if (input === display.answer) {
         setCorrectAnswer(true);
         dispatch({
           type : 'CORRECT'
@@ -181,12 +184,11 @@ function Game() {
       } else {
         setCorrectAnswer(false);
       }
-      setShowResult(true); // 결과 표
+      setShowResult(true); // 결과 표현
 
       setTimeout(() => {
         setShowResult(false); // 결과 안보이게 하기
-        setText('');  //입력된 글자 지우기
-        inputRef.current.focus();
+        // setText('');  //입력된 글자 지우기
 
         if(gus.length) {
           const _gus = gus.slice(1,numOfProbs + 1);
@@ -197,7 +199,7 @@ function Game() {
         }
       }, 1000);
       console.log(`gus length: ${gus.length}`);
-    }, [text, display, gus, dispatch, __goResult]
+    }, [input, display, gus, dispatch, __goResult]
   );
 
 
@@ -208,11 +210,12 @@ function Game() {
         <div className="score-container">
           <ShowScore />
         </div>
-        <span className="map-icon">
-          <MouseOverPopover />
-        </span>
         <div className='quiz-container'>
-          <div className='gu-name'>{display.name}</div>
+          {showResult ? (
+            <div className='gu-name'>정답 : {display.answer}</div>
+          ): (
+            <div className='gu-name'>{display.name}</div>
+          )}
           {gus.length ? (
             <div className='hidden-hint'>총 {gus.length}문제 남았습니다.</div>
           ):(
@@ -232,11 +235,9 @@ function Game() {
                 </div>
               )
             )):(
-              <form className='answer-container' onSubmit={__doSubmit}>
-                <input type='text' placeholder='지역구를 입력하세요' value={text}
-                  onChange={(e) => setText(e.target.value)} ref={inputRef} required />
-                <button className='submit-btn' type='submit'>입력</button>
-              </form>
+              <div className="map-container" onClick={__doSubmit} >
+                <Map data={data} />
+              </div>
             )}
           </div>
         </div>

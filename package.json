@@ -1,5 +1,5 @@
 {
-  "name": "gu-quiz",
+  "name": "at-game_seoul",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://jyy1554.github.io/gu-quiz",
+  "homepage": "https://jyy1554.github.io/at-game_seoul",
   "eslintConfig": {
     "extends": [
       "react-app",

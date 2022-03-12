@@ -23,4 +23,11 @@
 #root .map-wrapper .seoul-map .labels {
   pointer-events: none;
 }
+
+@media (max-width: 480px) {
+  #root .map-wrapper {
+    width: 22rem;
+    height: 19rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */
