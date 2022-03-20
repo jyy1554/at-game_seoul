@@ -6,8 +6,10 @@ class Footer extends Component {
     return (
       <div className='footer'>
         <div className="container">
-          <div className="left"></div>
-          <div className="right"></div>
+          {/* <div className="left"></div>
+          <div className="right"></div> */}
+          
+          <div className="ad"></div>
         </div>
       </div>
     );
