@@ -1,14 +1,11 @@
 #root {
   .welcome {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 90px;
+    position: fixed;
+    width: 100%;
 
     .wrapper {
-      width: 100%;
-      height: 80vh;
-      margin: 10px 0px;
+      height: 90vh;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50% / 100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
       background-position: center;
       background-size: contain;
@@ -88,7 +85,6 @@
   #root {
     .welcome {
       .wrapper {
-        margin: 20px 0px;
         .title-container {
           .main-title {
             font-size: 45px;

@@ -1,26 +1,18 @@
 #root .game {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 90px;
+  position: fixed;
+  width: 100%;
 }
 
 #root .game .wrapper {
-  width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-color: black;
 }
 
 #root .game .wrapper .gu-img {
   position: absolute;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.4;
@@ -82,7 +74,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 40px;
   z-index: 2;
 }
 

@@ -16,7 +16,7 @@ class App extends Component {
           <Route path="/game" element={<Game />} />
           <Route path="/result" element={<Result />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

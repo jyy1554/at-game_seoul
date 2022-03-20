@@ -236,12 +236,12 @@ function Game() {
           <div className='input-and-result'>
             {showResult ? ((correctAnswer ? (
                 <div className="o-icon">
-                  <audio src='assets/music/correct.mp3' autoPlay></audio>
+                  <audio src='assets/music/correct.mp3' volume="0.01" autoPlay></audio>
                   <SentimentSatisfiedOutlinedIcon color="success" sx={{ fontSize: 100}} />
                 </div>
               ):(
                 <div className="x-icon">
-                  <audio src='assets/music/wrong.mp3' autoPlay></audio>
+                  <audio src='assets/music/wrong.mp3' volume="0.01" autoPlay></audio>
                   <SentimentDissatisfiedOutlinedIcon sx={{ color:'red', fontSize: 100}} />
                 </div>
               )
