@@ -29,9 +29,24 @@ function Game() {
       answer: '영등포구'
     },
     {
+      name: '가로수길',
+      src: "assets/game/가로수길.jpeg",
+      answer: '강남구'
+    },
+    {
       name: '가산디지털단지',
       src: "assets/game/가산디지털단지.jpeg",
       answer: '금천구'
+    },
+    {
+      name: '강변 테크노마트',
+      src: "assets/game/강변테크노마트.jpeg",
+      answer: '광진구'
+    },
+    {
+      name: '갤러리아 포레',
+      src: "assets/game/갤러리아포레.jpeg",
+      answer: '성동구'
     },
     {
       name: '경복궁',
@@ -49,9 +64,34 @@ function Game() {
       answer: '종로구'
     },
     {
+      name: '광진동양파라곤',
+      src: "assets/game/광진동양파라곤.jpeg",
+      answer: '광진구'
+    },
+    {
       name: '국립중앙박물관',
       src: "assets/game/국립중앙박물관.jpeg",
       answer: '용산구'
+    },
+    {
+      name: '김포공항',
+      src: "assets/game/김포공항.jpeg",
+      answer: '강서구'
+    },
+    {
+      name: '낙산공원',
+      src: "assets/game/낙산공원.jpeg",
+      answer: '종로구'
+    },
+    {
+      name: '노량진 수산시장',
+      src: "assets/game/노량진수산시장.jpeg",
+      answer: '동작구'
+    },
+    {
+      name: '더현대서울',
+      src: "assets/game/더현대서울.jpeg",
+      answer: '영등포구'
     },
     {
       name: '도봉산',
@@ -69,12 +109,32 @@ function Game() {
       answer: '강서구'
     },
     {
+      name: '마장동 축산시장',
+      src: "assets/game/마장동.jpeg",
+      answer: '성동구'
+    },
+    {
       name: '명동',
       src: "assets/game/명동.jpeg",
       answer: '중구'
     },
     {
-      name: '북촌한옥마을',
+      name: '미아삼거리',
+      src: "assets/game/미아삼거리.jpeg",
+      answer: '강북구'
+    },
+    {
+      name: '보라매공원',
+      src: "assets/game/보라매공원.jpeg",
+      answer: '동작구'
+    },
+    {
+      name: '북서울 꿈의숲',
+      src: "assets/game/북서울꿈의숲.jpeg",
+      answer: '강북구'
+    },
+    {
+      name: '북촌 한옥마을',
       src: "assets/game/북촌한옥마을.jpeg",
       answer: '종로구'
     },
@@ -84,8 +144,8 @@ function Game() {
       answer: '은평구'
     },
     {
-      name: '상암MBC',
-      src: "assets/game/상암MBC.jpeg",
+      name: '상암 월드컵경기장',
+      src: "assets/game/상암월드컵경기장.jpeg",
       answer: '마포구'
     },
     {
@@ -104,9 +164,29 @@ function Game() {
       answer: '광진구'
     },
     {
-      name: '선유도공원',
-      src: "assets/game/선유도공원.jpeg",
+      name: '성북동 비둘기',
+      src: "assets/game/성북동비둘기.jpeg",
+      answer: '성북구'
+    },
+    {
+      name: '신도림 디큐브시티',
+      src: "assets/game/신도림디큐브시티.jpeg",
+      answer: '구로구'
+    },
+    {
+      name: '여의도',
+      src: "assets/game/여의도.jpeg",
       answer: '영등포구'
+    },
+    {
+      name: '연남동',
+      src: "assets/game/연남동.jpeg",
+      answer: '마포구'
+    },
+    {
+      name: '연세대',
+      src: "assets/game/연세대.jpeg",
+      answer: '서대문구'
     },
     {
       name: '올림픽공원',
@@ -114,9 +194,19 @@ function Game() {
       answer: '송파구'
     },
     {
+      name: '왕십리역',
+      src: "assets/game/왕십리역.jpeg",
+      answer: '성동구'
+    },
+    {
       name: '육군사관학교',
       src: "assets/game/육군사관학교.jpeg",
       answer: '노원구'
+    },
+    {
+      name: '은평뉴타운',
+      src: "assets/game/은평뉴타운.jpeg",
+      answer: '은평구'
     },
     {
       name: '이태원',
@@ -129,6 +219,16 @@ function Game() {
       answer: '서대문구'
     },
     {
+      name: '천호동 현대백화점',
+      src: "assets/game/천호동현대백화점.jpeg",
+      answer: '강동구'
+    },
+    {
+      name: '청량리역',
+      src: "assets/game/청량리역.jpeg",
+      answer: '동대문구'
+    },
+    {
       name: '청와대',
       src: "assets/game/청와대.jpeg",
       answer: '종로구'
@@ -139,16 +239,30 @@ function Game() {
       answer: '강남구'
     },
     {
+      name: '태릉선수촌',
+      src: "assets/game/태릉선수촌.jpeg",
+      answer: '노원구'
+    },
+    {
       name: 'DDP(동대문디자인플라자)',
       src: "assets/game/DDP.jpeg",
       answer: '중구'
+    },
+    {
+      name: '평창동 단독주택',
+      src: "assets/game/평창동.jpeg",
+      answer: '종로구'
     },
     {
       name: 'N서울타워(남산서울타워)',
       src: "assets/game/N서울타워.jpeg",
       answer: '용산구'
     },
-    // 홍대입구, 코엑스, 익선동, 광화문, 고려대, 
+    {
+      name: 'SBS 목동 사옥',
+      src: "assets/game/SBS목동사옥.jpeg",
+      answer: '양천구'
+    },
   ]
 
   /* useEffect에서 설정한 함수가 가장 처음 렌더링될때만 실행되고 이후 실행할 필요가 없는 경우엔,
