@@ -1,6 +1,6 @@
 #root .map-wrapper {
-  width: 25rem;
-  height: 20rem;
+  width: 40rem;
+  height: 30rem;
 }
 
 #root .map-wrapper .seoul-map {
@@ -22,12 +22,16 @@
 
 #root .map-wrapper .seoul-map .labels {
   pointer-events: none;
+  font-size: 15px;
 }
 
 @media (max-width: 480px) {
   #root .map-wrapper {
     width: 22rem;
     height: 19rem;
+  }
+  #root .map-wrapper .seoul-map .labels {
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -50,7 +50,7 @@ function Map({ data }) {
         .text(function(d){ return d.properties.name})
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
-        .style("font-size", 11)
+        // .style("font-size", 11)
         .style("fill", "white");
     
   }, [data, dimensions, dispatch, input]);

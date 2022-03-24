@@ -1,7 +1,7 @@
 #root {
   .map-wrapper {
-    width: 25rem;
-    height: 20rem;
+    width: 40rem;
+    height: 30rem;
     
     .seoul-map {
       display: block;
@@ -21,7 +21,8 @@
 
       .labels {
         //라벨에서도 .gu:hover가 동작하도록 labels에서 마우스 이벤트가 동작하지 않도록 함
-        pointer-events: none; 
+        pointer-events: none;
+        font-size: 15px;
       }
     }
   }
@@ -32,7 +33,16 @@
     .map-wrapper {
       width: 22rem;
       height: 19rem;
-    }
-      
+
+      .seoul-map {
+  
+        .gu:hover {
+        }
+  
+        .labels {
+          font-size: 11px;
+        }
+      }
+    }  
   }
 }
