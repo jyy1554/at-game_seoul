@@ -116,6 +116,9 @@
 }
 
 @media (max-width: 480px) {
+  #root .welcome .wrapper {
+    height: 80vh;
+  }
   #root .welcome .wrapper .title-container .main-title {
     font-size: 45px;
   }

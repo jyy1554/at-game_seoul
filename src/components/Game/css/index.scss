@@ -99,6 +99,8 @@ $gu-quiz-blue: #1976d2;
   #root {
     .game {
       .wrapper {
+        height: 80vh;
+
         .score-container {
           .ur-score-is {
             font-size: 1rem;

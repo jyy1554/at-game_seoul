@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 480px) {
+  #root .game .wrapper {
+    height: 80vh;
+  }
   #root .game .wrapper .score-container .ur-score-is {
     font-size: 1rem;
   }

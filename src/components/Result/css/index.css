@@ -111,6 +111,9 @@
 }
 
 @media (max-width: 480px) {
+  #root .result .wrapper {
+    height: 80vh;
+  }
   #root .result .wrapper .result-container .score-container .tell-score {
     font-size: 25px;
   }
