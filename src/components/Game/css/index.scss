@@ -7,7 +7,7 @@ $gu-quiz-blue: #1976d2;
     width: 100%;
 
     .wrapper {
-      height: 90vh;
+      // wrapper 높이는 index.css 파일에서
       background-color: black;
 
       .gu-img {
@@ -99,7 +99,7 @@ $gu-quiz-blue: #1976d2;
   #root {
     .game {
       .wrapper {
-        height: 80vh;
+        // wrapper 높이는 index.css 파일에서
 
         .score-container {
           .ur-score-is {

@@ -5,7 +5,6 @@
 }
 
 #root .result .wrapper {
-  height: 90vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))) 50% 50%/100%, url(https://media.giphy.com/media/l1J3UU9QBHDaGr052/giphy.gif);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) 50% 50%/100%, url(https://media.giphy.com/media/l1J3UU9QBHDaGr052/giphy.gif);
   background-position: center;
@@ -111,9 +110,6 @@
 }
 
 @media (max-width: 480px) {
-  #root .result .wrapper {
-    height: 80vh;
-  }
   #root .result .wrapper .result-container .score-container .tell-score {
     font-size: 25px;
   }

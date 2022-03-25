@@ -244,7 +244,7 @@ function Game() {
       answer: '노원구'
     },
     {
-      name: 'DDP(동대문디자인플라자)',
+      name: '동대문 DDP',
       src: "assets/game/DDP.jpeg",
       answer: '중구'
     },

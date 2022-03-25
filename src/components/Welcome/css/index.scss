@@ -5,7 +5,7 @@
     width: 100%;
 
     .wrapper {
-      height: 90vh;
+      // wrapper 높이는 index.css 파일에서
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) 50% 50% / 100%, url(https://media.giphy.com/media/XZg1znDzsQ1tHeqnQu/giphy.gif);
       background-position: center;
       background-size: contain;
@@ -85,7 +85,7 @@
   #root {
     .welcome {
       .wrapper {
-        height: 80vh;
+        // wrapper 높이는 index.css 파일에서
 
         .title-container {
           .main-title {
