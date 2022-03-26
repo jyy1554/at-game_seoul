@@ -33,6 +33,7 @@
         .subtitle-container {
           display: flex;
           column-gap: 7px;
+          line-height: 26px;  //텍스트 높이 맞추기 위해
 
           .subtitle {
             font-weight: bold;

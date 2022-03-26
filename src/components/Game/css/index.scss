@@ -64,10 +64,11 @@ $gu-quiz-blue: #1976d2;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        // margin-top: 40px;
         z-index: 2;
 
         .gu-name {
+          width: 100%;
+          text-align: center;
           font-size: 55px;
           font-weight: bold;
           color: white;

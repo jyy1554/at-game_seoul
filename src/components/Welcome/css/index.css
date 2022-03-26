@@ -47,6 +47,7 @@
   display: flex;
   -webkit-column-gap: 7px;
           column-gap: 7px;
+  line-height: 26px;
 }
 
 #root .welcome .wrapper .title-container .subtitle-container .subtitle {
