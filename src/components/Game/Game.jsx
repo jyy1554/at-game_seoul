@@ -63,6 +63,11 @@ function Game() {
             answer: "동대문구",
         },
         {
+            name: "고려대(안암캠퍼스)",
+            src: "assets/game/고려대.jpeg",
+            answer: "성북구",
+        },
+        {
             name: "광장시장",
             src: "assets/game/광장시장.jpeg",
             answer: "종로구",
