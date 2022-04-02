@@ -103,6 +103,11 @@ function Game() {
             answer: "도봉구",
         },
         {
+            name: "뚝섬한강공원",
+            src: "assets/game/뚝섬한강공원.jpeg",
+            answer: "광진구",
+        },
+        {
             name: "롯데월드타워",
             src: "assets/game/롯데월드타워.jpeg",
             answer: "송파구",
